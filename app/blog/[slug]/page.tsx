@@ -30,19 +30,17 @@ export default async function PostPage({
 
   return (
     <main>
-      <Container>
-        <article lang={post.lang} className="pb-16 pt-8">
-          <h1 className="mb-4 text-5xl font-extrabold dark:text-slate-100">
-            {post.title}
-          </h1>
-          <time dateTime={post.date} className="text-sm text-slate-400">
-            {format(new Date(post.date), 'yyyy MMM dd')}
-          </time>
-          <div className="mt-4">
-            <Content mdxSource={mdxSource} />
-          </div>
-        </article>
-      </Container>
+      <article lang={post.lang} className="pb-16 pt-8">
+        <h1 className="mb-4 text-5xl font-extrabold dark:text-slate-100">
+          {post.title}
+        </h1>
+        <time dateTime={post.date} className="text-sm text-slate-400">
+          {format(new Date(post.date), 'yyyy MMM dd')}
+        </time>
+        <div className="mt-4">
+          <Content mdxSource={mdxSource} />
+        </div>
+      </article>
     </main>
   )
 }

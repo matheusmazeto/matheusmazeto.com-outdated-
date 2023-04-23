@@ -9,7 +9,7 @@ export default function Home() {
   console.log({ posts })
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main>
       <article className="mt-8">
         {posts.map((post) => (
           <article
