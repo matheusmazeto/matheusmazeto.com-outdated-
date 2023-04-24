@@ -3,7 +3,6 @@ import { serialize } from 'next-mdx-remote/serialize'
 import rehypePrism from 'rehype-prism-plus'
 
 import { getAllPosts, getPost } from '../../../utils/blog'
-import Container from '@/components/Container'
 import Content from './components/Content'
 import './styles/prism-night-owl.css'
 
