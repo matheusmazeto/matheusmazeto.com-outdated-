@@ -18,11 +18,12 @@ const components = {
 const merriweather = Merriweather({
   weight: ['300', '400', '700', '900'],
   subsets: ['latin'],
+  variable: '--font-merriweather',
 })
 
 export default function Content({ mdxSource }: Props) {
   return (
-    <div className={merriweather.className + contentStyles.mdx}>
+    <div className={`${contentStyles.mdx} ${merriweather.variable}`}>
       <MDXRemote {...mdxSource} components={components} />
     </div>
   )
