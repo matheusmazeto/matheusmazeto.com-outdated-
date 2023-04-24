@@ -28,8 +28,6 @@ export function getPost(slug: string, fields: string[] = []) {
     }
   })
 
-  console.log({ items, fields })
-
   return items
 }
 

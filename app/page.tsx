@@ -6,8 +6,6 @@ import { getAllPosts } from '../utils/blog'
 export default function Home() {
   const posts = getAllPosts(['slug', 'title', 'date', 'language'])
 
-  console.log({ posts })
-
   return (
     <main>
       <article className="mt-8">
