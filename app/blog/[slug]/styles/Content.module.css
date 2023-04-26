@@ -21,7 +21,7 @@
 }
 
 .mdx a {
-  @apply border-b-[1px] border-blue-700 text-blue-700;
+  @apply border-b border-blue-700 text-blue-700;
 }
 
 .mdx ul {
