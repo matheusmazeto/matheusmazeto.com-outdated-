@@ -1,14 +1,10 @@
-import { Inter } from 'next/font/google'
-
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 import Link from 'next/link'
 
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Header() {
   return (
-    <div className={`${inter.className} grid gap-6`}>
+    <div className="grid gap-6 font-inter">
       <h1 className="text-2xl lg:text-5xl font-black">matheusmazeto.com</h1>
 
       <section>
