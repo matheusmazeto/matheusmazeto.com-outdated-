@@ -8,14 +8,14 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Header() {
   return (
-    <div className={`${inter.className} grid gap-6 grid-cols-[720px]`}>
-      <h1 className="text-5xl font-black">matheusmazeto.com</h1>
+    <div className={`${inter.className} grid gap-6`}>
+      <h1 className="text-2xl lg:text-5xl font-black">matheusmazeto.com</h1>
 
       <section>
         <dl>
           <dt className="font-bold text-xs mb-2 uppercase">About me</dt>
           <dd className="text-sm font-normal">
-            Computer scientist • Frontend Engineer
+            Computer scientist • Front-end software engineer
           </dd>
         </dl>
       </section>
